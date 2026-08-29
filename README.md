@@ -4,6 +4,15 @@ A modular, reproducible PySpark performance benchmarking suite designed to measu
 
 This repository implements a $2^3$ factorial experiment matrix analyzing the performance trade-offs of salting, broadcast joins, and dynamic caching in PySpark standalone and multi-node Docker environments.
 
+
+## Core Features
+
+* **Isolated Approach Benchmarks:** Dedicated execution pipelines to isolate and evaluate single optimization strategies (Baseline, Key Salting, Broadcast Join and Caching).
+* **Factorial Matrix Runner:** Systematically evaluates combination impacts across all $2^3$ treatment conditions to detect interaction effects.
+* **Synthetic Data Generator:** Configurable dataset generation with tuneable data volume and skew parameters.
+* **Dual Execution Modes:** Runs seamlessly on local standalone PySpark instances or multi-node Docker Spark clusters.
+* **Automated Visualizations:** Automatically records benchmark execution times, memory usage, and partition distributions into exportable performance charts.
+
 ---
 
 ## Repository Structure
@@ -35,11 +44,3 @@ pyspark-pipeline-benchmarks/
 │       ├── aqe_benchmark.py         # DataFrame caching and persist pipeline
 │       └── factorial_benchmark.py   # Full 2^3 factorial matrix runner combining all approaches
 └── tests/                         # Unit and integration test suite
-
-## Core Features
-
-* **Isolated Approach Benchmarks:** Dedicated execution pipelines to isolate and evaluate single optimization strategies (Baseline, Key Salting, Broadcast Join and Caching).
-* **Factorial Matrix Runner:** Systematically evaluates combination impacts across all $2^3$ treatment conditions to detect interaction effects.
-* **Synthetic Data Generator:** Configurable dataset generation with tuneable data volume and skew parameters.
-* **Dual Execution Modes:** Runs seamlessly on local standalone PySpark instances or multi-node Docker Spark clusters.
-* **Automated Visualizations:** Automatically records benchmark execution times, memory usage, and partition distributions into exportable performance charts.
