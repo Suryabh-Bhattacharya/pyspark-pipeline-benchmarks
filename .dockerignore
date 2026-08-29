@@ -1,0 +1,27 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Cache & Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Git & IDE Configurations
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Exclude Local Data & Figures (Handled dynamically via Docker Volumes)
+data/raw/*
+!data/raw/.gitkeep
+reports/figures/*
+!reports/figures/.gitkeep
+
+# System Files & Logs
+.DS_Store
+*.log
+.pytest_cache/
