@@ -13,6 +13,14 @@ This repository implements a $2^3$ factorial experiment matrix analyzing the per
 * **Dual Execution Modes:** Runs seamlessly on local standalone PySpark instances or multi-node Docker Spark clusters.
 * **Automated Visualizations:** Automatically records benchmark execution times, memory usage, and partition distributions into exportable performance charts.
 
+## Prerequisites
+
+Ensure you have the following installed locally:
+
+* Python 3.10 or higher
+* Docker Desktop & Docker Compose (for containerized cluster execution)
+* Java 11 or 17 (OpenJDK) for running PySpark outside of Docker
+
 ---
 
 ## Repository Structure
@@ -20,11 +28,9 @@ This repository implements a $2^3$ factorial experiment matrix analyzing the per
 ```text
 pyspark-pipeline-benchmarks/
 ├── .dockerignore
-├── .gitignore
 ├── docker-compose.yml
 ├── Dockerfile
 ├── pyproject.toml
-├── requirements.txt
 ├── README.md
 ├── data/
 │   └── raw/               # Output directory for synthetic parquet datasets
