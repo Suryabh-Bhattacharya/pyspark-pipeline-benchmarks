@@ -31,6 +31,7 @@ pyspark-pipeline-benchmarks/
 ├── docker-compose.yml
 ├── Dockerfile
 ├── pyproject.toml
+├── requirements.txt
 ├── README.md
 ├── data/
 │   └── raw/               # Output directory for synthetic parquet datasets
