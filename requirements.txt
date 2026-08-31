@@ -1,0 +1,16 @@
+# Core PySpark Engine
+pyspark>=3.5.0
+
+# Numerical, Data Processing & Aggregation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data Viz Analytics
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# HTTP Requests (Spark UI Metrics Collector)
+requests>=2.31.0
+
+# Terminal Table Formatting (Benchmark Output)
+tabulate>=0.9.0
